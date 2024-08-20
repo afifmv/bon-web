@@ -1,0 +1,134 @@
+.foo-div {
+  margin: 0;
+}
+
+/* iPhone 13 Pro Max Portrait Mode */
+@media (max-width: 850px) {
+  /* Styles for iPhone 13 Pro Max in portrait mode */
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+  }
+}
+
+@media (min-width: 1024px) {
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+  }
+
+  .button-container img {
+    height: 7rem;
+    margin: 0 auto;
+  }
+
+  .button-container .click-button {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 1.5rem;
+    height: max-content;
+    padding: 1.7rem;
+  }
+
+  .dropdown-div {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 1.5rem;
+    height: max-content;
+    padding: 1.7rem;
+    overflow: hidden;
+  }
+  /* 
+.button-container > a:hover {
+  background: black;
+  color: whitesmoke;
+} */
+
+  .click-button:hover {
+    background: black;
+    color: whitesmoke;
+  }
+
+  .dropdown-div:hover {
+    background: black;
+    color: whitesmoke;
+  }
+
+  .dropdown-div a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .dropdown-div ul {
+    display: none;
+    transition: all 0.5s linear;
+    list-style: none;
+    text-align: center;
+    padding: 0rem 2rem;
+  }
+
+  .dropdown-div ul li a {
+    font-size: large;
+  }
+
+  .dropdown-div:hover ul {
+    display: block;
+  }
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: black;
+  color: white;
+}

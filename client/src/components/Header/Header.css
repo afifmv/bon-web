@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap");
+
+.gfs-didot-regular {
+  font-family: "GFS Didot", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.home-name {
+  grid-row: 3;
+  grid-column: 2;
+  margin: 0 auto;
+  background: black;
+}
+
+.home-name h1 {
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+}
+
+.home-name p {
+  color: white;
+  text-shadow: 0px 4px black;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 80%;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.home-name hr {
+  width: 80%;
+  margin: 3rem auto;
+}
+@media (max-width: 850px) {
+}
+
+@media (min-width: 1024px) {
+  .home-banner {
+    width: 100vw;
+    height: 100vh;
+    background: url(https://www.beta.org/wp-content/uploads/2022/03/Beta-Quote-1893.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .home-bg {
+    background: black;
+  }
+}

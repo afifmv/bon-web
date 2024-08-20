@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap");
+
+@media (max-width: 850px) {
+}
+
+@media (min-width: 1024px) {
+  .rush-img {
+    width: 100vw;
+    height: 100vh;
+    background: url(https://i.ytimg.com/vi/aen3zyvyevc/maxresdefault.jpg);
+    background-size: cover;
+  }
+
+  .rush-exec-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.rush-banner {
+  color: white;
+  text-align: center;
+  font-size: x-large;
+  z-index: 3;
+  background-color: black;
+}
+
+.rush-exec-div * {
+  font-size: smaller;
+}
+
+.rush-interest {
+  z-index: 2;
+  margin: 2rem;
+}
+
+.rush-interest h3 {
+  margin: 2rem;
+}
+
+.rush-interest a {
+  color: black;
+  background: white;
+  padding: 1vw;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.rush-interest a:hover {
+  background: palevioletred;
+}

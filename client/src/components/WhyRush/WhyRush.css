@@ -1,0 +1,93 @@
+.why-rush-banner > .banner-img {
+  background: white;
+  height: fit-content;
+  width: 100vw;
+}
+
+.why-rush-banner {
+  background: black;
+}
+
+.why-rush-info {
+  color: white;
+}
+
+.banner-img > img {
+  width: 100%;
+  height: 100vh;
+}
+
+.why-rush-banner > hr {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.why-rush-box {
+  background-color: #283152;
+  color: white;
+  width: 80%;
+  min-height: 10rem;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  height: 18vh;
+  transition: all 0.5s;
+}
+
+.why-rush-box:hover {
+  background-color: rgb(213, 90, 90);
+}
+
+@media (max-width: 850px) {
+  .why-rush-mission > * {
+    margin: 1rem auto;
+  }
+
+  .video-player * {
+    margin: auto;
+    width: 100vw;
+    height: 30vh;
+  }
+
+  .why-rush-info {
+    margin: 3rem auto;
+    width: 95%;
+    text-align: center;
+    font-weight: 400;
+    font-stretch: semi-expanded;
+    font-size: medium;
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .video-player * {
+    margin: auto;
+    width: 100%;
+    height: 70vh;
+  }
+
+  .why-rush-mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+  }
+
+  .video-player {
+    margin: auto;
+    width: 80%;
+  }
+
+  .why-rush-info {
+    margin: 3rem auto;
+    width: 70%;
+    text-align: center;
+    font-weight: 400;
+    font-stretch: semi-expanded;
+    font-size: medium;
+    letter-spacing: 1px;
+  }
+}

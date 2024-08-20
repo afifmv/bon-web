@@ -1,0 +1,10 @@
+@media (max-width: 850px) {
+}
+
+@media (min-width: 1024px) {
+  .athletes-banner {
+    background: url(https://image.isu.pub/230601220957-faf4361729847b9889299671d89d54ed/jpg/page_1_thumb_large.jpg);
+    width: 100vw;
+    height: 100vh;
+  }
+}

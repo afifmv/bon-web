@@ -1,0 +1,66 @@
+/* iPhone 13 Pro Max Portrait Mode */
+@media (max-width: 850px) {
+  /* Styles for iPhone 13 Pro Max in portrait mode */
+  .index-banner {
+    background: black;
+    display: grid;
+    margin: auto;
+    color: white;
+    height: 100vh;
+  }
+
+  .index-banner img {
+    margin: 3rem auto;
+    width: 70vw;
+    border: solid red 1px;
+  }
+
+  .index-banner .president-details {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .index-banner {
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    gap: 10px;
+    margin-top: 0rem;
+    padding: 0rem;
+    height: 70vh;
+    color: white;
+  }
+
+  .index-banner img {
+    grid-column: 2;
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+  }
+
+  .index-banner .president-details {
+    grid-column: 3;
+    display: grid;
+    grid-template-rows: 1fr;
+    margin: 0;
+  }
+
+  .president-details h2 {
+    margin: 1vh auto;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  }
+
+  .president-details pre {
+    width: 100%;
+    text-align: center;
+    margin: 1vh auto;
+    text-wrap: wrap;
+  }
+}

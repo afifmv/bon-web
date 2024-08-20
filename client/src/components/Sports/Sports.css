@@ -1,0 +1,86 @@
+.sports-banner {
+  color: white;
+}
+
+.sports-display div hr {
+  width: 100%;
+  margin: auto;
+}
+
+@media (max-width: 850px) {
+  .sports-banner .img-banner {
+    background: url(https://images.squarespace-cdn.com/content/v1/5d55b38719eb49000118ace1/1649884438066-Z3GN9G4TDT3MCQ2PF0N2/image-asset.jpeg);
+  }
+
+  .sports-display {
+    width: 100%;
+    margin: auto;
+  }
+
+  .sports-display img {
+    height: 300px;
+    width: 350px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .sports-banner h1 {
+    text-align: center;
+    margin: auto;
+  }
+
+  .sports-banner hr {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  .sports-display div h2 {
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  .sports-display div hr {
+    width: 60%;
+    margin: 0.5rem auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sports-banner .img-banner {
+    width: 100vw;
+    height: 100vh;
+    background: url(https://images.squarespace-cdn.com/content/v1/5d55b38719eb49000118ace1/1649884438066-Z3GN9G4TDT3MCQ2PF0N2/image-asset.jpeg);
+  }
+
+  .sports-display {
+    width: 80%;
+    margin: 10vh auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sports-display img {
+    height: 40vh;
+  }
+
+  .sports-banner h1 {
+    text-align: center;
+    font-size: 3.2rem;
+  }
+
+  .sports-banner hr {
+    width: 80%;
+    margin: auto;
+  }
+
+  .sports-display div h2 {
+    margin: auto;
+    text-align: center;
+  }
+
+  .sports-display div hr {
+    width: 60%;
+    margin: 0.5rem auto;
+  }
+}
