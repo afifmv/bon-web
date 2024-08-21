@@ -18,7 +18,7 @@ const text3 =
 const text4 =
   "​So have fun with Rush, ask as many questions as possible, meet as many members as you can, enjoy the social events, and remember that there is a more serious side to each fraternity that can benefit you for life. Please feel free to contact us at any time with any comments or suggestions regarding Beta Theta Pi or Rush in general.";
 
-const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:3000";
+const apiUrl = process.env.REACT_APP_API_URL;
 
 const texts = [text1, text2, text3, text4];
 
