@@ -32,7 +32,7 @@ function App() {
         <p class="signature">
           Designed and developed by{" "}
           <a
-            href="https://yourportfolio.com"
+            href="https://github.com/afifmv"
             target="_blank"
             rel="noopener noreferrer"
           >
