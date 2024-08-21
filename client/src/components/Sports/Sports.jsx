@@ -8,6 +8,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const apiUrl = process.env.REACT_APP_API_URL;
+console.log(apiUrl);
 const text1 =
   "At Beta Theta Pi, we understand the importance that Sports play in our lives and have ensured that our fraternity remains the most Athletic fraternity on campus. Our achievements range from participation and domination in all intramural sports, maintaining our position as UBC's #1 intramural Hockey Team as well as  home to professional athletes. ";
 

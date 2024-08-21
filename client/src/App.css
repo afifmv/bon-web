@@ -1,1 +1,28 @@
+.page > footer {
+  color: white;
+  position: relative;
+  top: 300px;
+  margin: auto;
+}
 
+.footer {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #dee2e6;
+}
+
+.signature {
+  font-family: "Cursive", sans-serif;
+  color: white;
+  font-size: 14px;
+}
+
+.footer .signature a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer .signature a:hover {
+  text-decoration: underline;
+}

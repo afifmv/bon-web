@@ -1,0 +1,12 @@
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #dee2e6;
+}
+
+.signature {
+  font-family: "Cursive", sans-serif;
+  color: #6c757d;
+  font-size: 14px;
+}

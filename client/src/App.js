@@ -11,19 +11,36 @@ import Sports from "./components/Sports/Sports";
 import Rush from "./components/Rush/Rush";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Athletes from "./components/Athletes/Athletes";
+import Footer from "./components/Footer/Footer";
+import "./App.css";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/testimonials" element={<Testimonials />} />
-      <Route path="/whyrush" element={<WhyRush />} />
-      <Route path="/executives" element={<Executives />} />
-      <Route path="/dtp" element={<DTP />} />
-      <Route path="/sports" element={<Sports />} />
-      <Route path="/rush" element={<Rush />} />
-      <Route path="/athletes" element={<Athletes />} />
-    </Routes>
+    <div className="page">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/whyrush" element={<WhyRush />} />
+        <Route path="/executives" element={<Executives />} />
+        <Route path="/dtp" element={<DTP />} />
+        <Route path="/sports" element={<Sports />} />
+        <Route path="/rush" element={<Rush />} />
+        <Route path="/athletes" element={<Athletes />} />
+      </Routes>
+      <footer class="footer">
+        <p>&copy; 2024 Beta Theta Pi, UBC. All rights reserved.</p>
+        <p class="signature">
+          Designed and developed by{" "}
+          <a
+            href="https://yourportfolio.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Afif
+          </a>
+        </p>
+      </footer>
+    </div>
   );
 }
 
