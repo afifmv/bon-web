@@ -4,13 +4,15 @@ import ButtonContainer from "../Navbar/ButtonContainer";
 import Executive from "./Executive";
 import axios from "axios";
 
+const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:3000";
+
 function Executives() {
   const [executives, setItems] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/executive");
+        const response = await axios.get(`${apiUrl}/api/executive`);
         setItems(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);

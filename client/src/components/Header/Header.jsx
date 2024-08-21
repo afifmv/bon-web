@@ -5,7 +5,6 @@ import ButtonContainer from "../Navbar/ButtonContainer";
 import Navbar from "../Navbar/Navbar";
 
 function Header() {
-  console.log("Header is rendered!");
   return (
     <div>
       <Navbar />

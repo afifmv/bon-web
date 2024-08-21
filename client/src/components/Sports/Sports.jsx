@@ -7,7 +7,7 @@ import SportsDisplay2 from "./SportsDisplayOption2";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-const alternate = false;
+const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:3000";
 
 const text1 =
   "At Beta Theta Pi, we understand the importance that Sports play in our lives and have ensured that our fraternity remains the most Athletic fraternity on campus. Our achievements range from participation and domination in all intramural sports, maintaining our position as UBC's #1 intramural Hockey Team as well as  home to professional athletes. ";
@@ -18,7 +18,7 @@ function Sports() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/sports");
+        const response = await axios.get(`${apiUrl}/api/sports`);
         setSports(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);

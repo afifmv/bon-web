@@ -10,13 +10,15 @@ import "./Athletes.css";
 const text1 =
   "Our fraternity is home to professional athletes. Here at Beta Theta Pi, we motivate our brothers to push beyond their capabailities and reach the highest the world has to offer. As a result, Athletes at Beta Theta Pi go on to represent their teams on a global level. ";
 
+const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:3000";
+
 function Athletes() {
   const [athletes, setInformation] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/athletes");
+        const response = await axios.get(`${apiUrl}/api/athletes`);
         setInformation(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
