@@ -12,11 +12,6 @@
   color: white;
 }
 
-.banner-img > img {
-  width: 100%;
-  height: 100vh;
-}
-
 .why-rush-banner > hr {
   width: 80%;
   margin: 3rem auto;
@@ -40,6 +35,10 @@
 }
 
 @media (max-width: 850px) {
+  .banner-img > img {
+    display: none;
+  }
+
   .why-rush-mission > * {
     margin: 1rem auto;
   }
@@ -62,6 +61,10 @@
 }
 
 @media (min-width: 1024px) {
+  .banner-img > img {
+    width: 100%;
+    height: 100vh;
+  }
   .video-player * {
     margin: auto;
     width: 100%;

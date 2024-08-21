@@ -7,19 +7,19 @@ import SportsDisplay2 from "./SportsDisplayOption2";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
+const alternate = false;
+
 const text1 =
   "At Beta Theta Pi, we understand the importance that Sports play in our lives and have ensured that our fraternity remains the most Athletic fraternity on campus. Our achievements range from participation and domination in all intramural sports, maintaining our position as UBC's #1 intramural Hockey Team as well as  home to professional athletes. ";
 
 function Sports() {
-  const [information, setInformation] = useState([]);
+  const [sports, setSports] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(
-          "http://localhost:3000/api/information"
-        );
-        setInformation(response.data);
+        const response = await axios.get("http://localhost:3000/api/sports");
+        setSports(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -27,19 +27,6 @@ function Sports() {
 
     fetchData();
   }, []);
-
-  const storm = information.find((info) => info.name === "Storm Info");
-  const stormImage = information.find((info) => info.name === "Storm Image");
-
-  const bestHockey = information.find(
-    (info) => info.name === "BestHockey Info"
-  );
-  const bestHockeyImage = information.find(
-    (info) => info.name === "BestHockey Image"
-  );
-
-  const flag = information.find((info) => info.name === "flag info");
-  const flagImage = information.find((info) => info.name === "flag Image");
 
   return (
     <div className="sports-banner">
@@ -49,46 +36,20 @@ function Sports() {
       <hr />
       <div>
         <WhyRushInfo text={text1} />
-        {bestHockey ? (
-          <SportsDisplay1
-            sport="Hockey"
-            text={bestHockey.information}
-            image={bestHockeyImage.information}
-          />
-        ) : (
-          <SportsDisplay1
-            sport="Hockey"
-            text="Kindly Refresh The Page"
-            image="#"
-          />
-        )}
-        <hr />
-        {storm ? (
-          <SportsDisplay2
-            sport="Storm the Wall"
-            text={storm.information}
-            image={stormImage.information}
-          />
-        ) : (
-          <SportsDisplay2
-            sport="Storm the Wall"
-            text="Kindly Refresh The Page"
-            image="#"
-          />
-        )}
-        <hr />
-        {flag ? (
-          <SportsDisplay1
-            sport="Flag Football"
-            text={flag.information}
-            image={flagImage.information}
-          />
-        ) : (
-          <SportsDisplay1
-            sport="Flag Football"
-            text="Kindly Refresh The Page"
-            image="#"
-          />
+        {sports.map((sport, index) =>
+          index % 2 ? (
+            <SportsDisplay1
+              sport={sport.name}
+              text={sport.information}
+              image={sport.image}
+            />
+          ) : (
+            <SportsDisplay2
+              sport={sport.name}
+              text={sport.information}
+              image={sport.image}
+            />
+          )
         )}
       </div>
     </div>

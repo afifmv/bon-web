@@ -11,14 +11,12 @@ const text1 =
   "Our fraternity is home to professional athletes. Here at Beta Theta Pi, we motivate our brothers to push beyond their capabailities and reach the highest the world has to offer. As a result, Athletes at Beta Theta Pi go on to represent their teams on a global level. ";
 
 function Athletes() {
-  const [information, setInformation] = useState([]);
+  const [athletes, setInformation] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(
-          "http://localhost:3000/api/information"
-        );
+        const response = await axios.get("http://localhost:3000/api/athletes");
         setInformation(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -28,16 +26,6 @@ function Athletes() {
     fetchData();
   }, []);
 
-  const carsonMiller = information.find((info) => info.name === "Carson Info");
-  const carsonMillerImage = information.find(
-    (info) => info.name === "Carson Image"
-  );
-
-  const lucasRobertson = information.find((info) => info.name === "Lucas Info");
-  const lucasRobertsonImage = information.find(
-    (info) => info.name === "Lucas Image"
-  );
-
   return (
     <div className="sports-banner">
       <div className="athletes-banner"></div>
@@ -46,33 +34,20 @@ function Athletes() {
       <hr />
       <div>
         <WhyRushInfo text={text1} />
-        {carsonMiller ? (
-          <SportsDisplay1
-            sport="Carson Miller"
-            text={carsonMiller.information}
-            image={carsonMillerImage.information}
-          />
-        ) : (
-          <SportsDisplay1
-            sport="Carson Miller"
-            text="Kindly Refresh The Page"
-            image="#"
-          />
-        )}
-
-        <hr />
-        {carsonMiller ? (
-          <SportsDisplay2
-            sport="Lucas Robertson"
-            text={lucasRobertson.information}
-            image={lucasRobertsonImage.information}
-          />
-        ) : (
-          <SportsDisplay2
-            sport="Lucas Robertson"
-            text="Kindly Refresh The Page"
-            image="#"
-          />
+        {athletes.map((athlete, index) =>
+          index % 2 ? (
+            <SportsDisplay1
+              sport={athlete.name}
+              text={athlete.information}
+              image={athlete.image}
+            />
+          ) : (
+            <SportsDisplay2
+              sport={athlete.name}
+              text={athlete.information}
+              image={athlete.image}
+            />
+          )
         )}
         <hr />
       </div>

@@ -26,10 +26,14 @@ mongoose
 const testimonialRoutes = require("./routes/testimonial.js");
 const executiveRoutes = require("./routes/executive.js");
 const informationRoutes = require("./routes/information.js");
+const sportsRoutes = require("./routes/sports.js");
+const athletesRoutes = require("./routes/athletes.js");
 
 app.use("/api/testimonial", testimonialRoutes);
 app.use("/api/executive", executiveRoutes);
 app.use("/api/information", informationRoutes);
+app.use("/api/sports", sportsRoutes);
+app.use("/api/athletes", athletesRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello World!");

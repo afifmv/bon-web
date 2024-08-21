@@ -35,12 +35,15 @@ function Testimonials() {
       <div>
         <WhyRushInfo text={text1} />
         {testimonials.map((testimonial) => (
-          <Testimonial
-            sport={testimonial.name}
-            job={testimonial.job}
-            text={testimonial.testimonial}
-            image={testimonial.imageLink}
-          />
+          <div>
+            <Testimonial
+              sport={testimonial.name}
+              job={testimonial.job}
+              text={testimonial.testimonial}
+              image={testimonial.imageLink}
+            />
+            <hr />
+          </div>
         ))}
       </div>
     </div>
