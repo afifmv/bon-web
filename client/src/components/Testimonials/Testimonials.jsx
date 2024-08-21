@@ -6,7 +6,7 @@ import WhyRushBox from "../WhyRush/WhyRushBox";
 import Testimonial from "./Testimonial";
 import axios from "axios";
 
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = "https://bon-web-production.up.railway.app";
 
 const text1 =
   "Beta is forever. A testament to that is our ever strong presence of alumni who actively participate and contribute to our fraternity, even years after they have graduated. Here's what our alumni have to say about the Gamma Omicron Chapter at UBC.";

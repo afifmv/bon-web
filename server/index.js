@@ -3,9 +3,6 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
 
-const Executive = require("./models/Executive");
-const Information = require("./models/Information");
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 
