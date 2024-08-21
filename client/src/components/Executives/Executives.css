@@ -37,11 +37,6 @@ body {
   text-align: center;
 }
 
-.executive > img {
-  width: 400px;
-  height: 400px;
-}
-
 .executive > h3 {
   color: white;
   margin: 0;
@@ -78,9 +73,19 @@ body {
     color: white;
     margin-bottom: 1rem;
   }
+
+  .executive > img {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 @media (min-width: 1024px) {
+  .executive > img {
+    width: 400px;
+    height: 400px;
+  }
+
   .executives-banner > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
