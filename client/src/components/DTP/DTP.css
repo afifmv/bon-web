@@ -16,6 +16,7 @@
 
   .photo-grid img {
     height: 300px;
+    width: 300px;
     display: block;
     margin: 1vh auto;
   }

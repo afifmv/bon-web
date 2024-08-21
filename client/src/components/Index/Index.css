@@ -6,13 +6,11 @@
     display: grid;
     margin: auto;
     color: white;
-    height: 100vh;
   }
 
   .index-banner img {
     margin: 3rem auto;
     width: 70vw;
-    border: solid red 1px;
   }
 
   .index-banner .president-details {
