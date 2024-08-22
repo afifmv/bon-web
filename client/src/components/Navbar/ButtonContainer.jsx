@@ -4,7 +4,7 @@ import onClick from "../animation";
 
 function ButtonContainer() {
   return (
-    <div className="foo-div">
+    <div className="foo-div gfs-didot-regular">
       <div className="button-container d-none d-lg-grid">
         <a href="/" className="click-button">
           Home
@@ -16,12 +16,12 @@ function ButtonContainer() {
           <a href="#">What is Beta?</a>
           <ul>
             <li>
-              <a href="/sports">Sports</a>
+              <a href="/whyrush">Our Values</a>
             </li>
             <hr />
-            {/* <li>
-              <a href="/alumni">Alumni Board</a>
-            </li> */}
+            <li>
+              <a href="/sports">Sports</a>
+            </li>
             <hr />
             <li>
               <a href="/athletes">Athletes</a>
@@ -34,16 +34,16 @@ function ButtonContainer() {
           alt=""
         />
         <div className="dropdown-div">
-          <a href="/whyrush">Why Beta?</a>
+          <a href="/whyrush">Alumni</a>
           <ul>
-            <li>
-              <a href="/whyrush">Values</a>
-            </li>
-            <hr />
             <li>
               <a href="/testimonials">Testimonials</a>
             </li>
             <hr />
+            <li>{/* <a href="/alumni-board">Alumni Board</a> */}</li>
+            {/* <hr /> */}
+            <li>{/* <a href="/donation">Donation</a> */}</li>
+            {/* <hr /> */}
             <li>
               <a href="https://www.beta.org/">BETA HQ</a>
             </li>
@@ -86,6 +86,9 @@ function ButtonContainer() {
           <a href="/rush">Rush</a>
           <a href="/dtp">Philanthrophy</a>
           <a href="/sports">Sports</a>
+          <a href="/athletes">Athletes</a>
+          {/* <a href="/alumni-board">Alumni Board</a> */}
+          {/* <a href="/donation">Donation</a> */}
         </div>
         {/* <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links --> */}
         <a href="javascript:void(0);" className="icon" onClick={onClick}>

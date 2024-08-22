@@ -13,6 +13,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Athletes from "./components/Athletes/Athletes";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
+import AlumniBoard from "./components/AlumniBoard/AlumniBoard";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/sports" element={<Sports />} />
         <Route path="/rush" element={<Rush />} />
         <Route path="/athletes" element={<Athletes />} />
+        {/* <Route path="/alumni-board" element={<AlumniBoard />} /> */}
       </Routes>
       <footer class="footer">
         <p>&copy; 2024 Beta Theta Pi, UBC. All rights reserved.</p>

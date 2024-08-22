@@ -9,6 +9,7 @@ function Home() {
   return (
     <div className="home-bg">
       <Header />
+
       <Index />
     </div>
   );

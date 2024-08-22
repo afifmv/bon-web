@@ -29,7 +29,7 @@ function Index() {
   return (
     <div className="index-banner">
       <img src="https://i.postimg.cc/htbybssf/brendanC.png" alt="Brendan" />
-      <div className="president-details">
+      <div className="president-details gfs-didot-regular">
         <h2>Brendan Cooper - President</h2>
         <pre className="gfs-didot-regular">
           {presidentSpeech ? presidentSpeech.information : "Loading..."}

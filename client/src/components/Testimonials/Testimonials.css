@@ -56,7 +56,7 @@ hr {
 
 @media (min-width: 1024px) {
   .testimonial-display {
-    width: 60%;
+    width: 90%;
     margin: 10vh auto;
     display: grid;
     padding: 20px;

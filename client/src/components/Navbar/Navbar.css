@@ -55,11 +55,6 @@
     padding: 1.7rem;
     overflow: hidden;
   }
-  /* 
-.button-container > a:hover {
-  background: black;
-  color: whitesmoke;
-} */
 
   .click-button:hover {
     background: black;

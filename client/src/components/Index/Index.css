@@ -27,30 +27,26 @@
     background: black;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
-    gap: 10px;
     margin-top: 0rem;
     padding: 0rem;
     height: 110vh;
     color: white;
-    border: solid 1px red;
   }
 
   .index-banner img {
     grid-column: 2;
     width: 30rem;
     height: 30rem;
-    margin: auto;
+    margin-top: 1rem;
   }
 
   .index-banner .president-details {
     grid-column: 3;
-    display: grid;
-    grid-template-rows: 1fr;
-    margin: 0;
+    /* border: solid 1px red; */
   }
 
   .president-details h2 {
-    margin: 1vh auto;
+    margin: 50px auto;
     font-weight: bold;
     width: 100%;
     text-align: center;
@@ -59,7 +55,6 @@
   .president-details pre {
     width: 100%;
     text-align: center;
-    margin: 1vh auto;
-    text-wrap: wrap;
+    margin: auto;
   }
 }

@@ -9,34 +9,47 @@
 .home-name {
   grid-row: 3;
   grid-column: 2;
-  margin: 0 auto;
+  margin: auto;
   background: black;
-}
-
-.home-name h1 {
-  text-align: center;
-  color: white;
-  font-size: 5rem;
-}
-
-.home-name p {
-  color: white;
-  text-shadow: 0px 4px black;
-  text-align: center;
-  font-size: 1.5rem;
-  width: 80%;
-  text-align: center;
-  margin: 1rem auto;
 }
 
 .home-name hr {
   width: 80%;
-  margin: 3rem auto;
+  margin: auto;
+  margin-top: 1rem;
 }
 @media (max-width: 850px) {
+  .home-name h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+  }
+  .home-name p {
+    color: white;
+    text-shadow: 0px 4px black;
+    text-align: center;
+    font-size: 1rem;
+    width: 80%;
+    text-align: center;
+    margin: 1rem auto;
+  }
 }
 
 @media (min-width: 1024px) {
+  .home-name h1 {
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+  }
+  .home-name p {
+    color: white;
+    text-shadow: 0px 4px black;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: center;
+    margin: 1rem auto;
+  }
   .home-banner {
     width: 100vw;
     height: 100vh;
