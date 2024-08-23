@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ButtonContainer from "../Navbar/ButtonContainer";
 import "./Rush.css";
-import PhotoGrid from "../DTP/PhotoGrid";
 import WhyRushInfo from "../WhyRush/WhyRushInfo";
 import Executive from "../Executives/Executive";
 import axios from "axios";

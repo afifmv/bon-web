@@ -10,9 +10,7 @@ function Index() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(
-          `${process.env.REACT_APP_API_URL}/api/information`
-        );
+        const response = await axios.get(`${apiUrl}/api/information`);
         setInformation(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);

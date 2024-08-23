@@ -1,6 +1,5 @@
 import ButtonContainer from "../Navbar/ButtonContainer";
 import WhyRushInfo from "../WhyRush/WhyRushInfo";
-import WhyRushBox from "../WhyRush/WhyRushBox";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import SportsDisplay1 from "../Sports/SportsDisplayOption1";

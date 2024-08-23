@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import ButtonContainer from "../Navbar/ButtonContainer";
 import "./Testimonials.css";
 import WhyRushInfo from "../WhyRush/WhyRushInfo";
-import WhyRushBox from "../WhyRush/WhyRushBox";
 import Testimonial from "./Testimonial";
 import axios from "axios";
 

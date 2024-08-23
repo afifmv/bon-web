@@ -1,7 +1,5 @@
 import React from "react";
 import "./Header.css";
-import HeaderLink from "./HeaderLink";
-import ButtonContainer from "../Navbar/ButtonContainer";
 import Navbar from "../Navbar/Navbar";
 
 function Header() {

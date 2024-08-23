@@ -21,11 +21,6 @@ const socialConduct = {
   info: " Beta is committed to standards of social conduct which are guided by principles of urbane, civil, courteous and responsible development.",
 };
 
-const community = {
-  name: "Commitment to Community",
-  info: "The experience of being a Beta encourages men to serve their university, fraternal, and local communities. ",
-};
-
 function WhyRushMission() {
   return (
     <div className="why-rush-mission">

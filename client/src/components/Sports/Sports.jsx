@@ -1,7 +1,6 @@
 import ButtonContainer from "../Navbar/ButtonContainer";
 import "./Sports.css";
 import WhyRushInfo from "../WhyRush/WhyRushInfo";
-import WhyRushBox from "../WhyRush/WhyRushBox";
 import SportsDisplay1 from "./SportsDisplayOption1";
 import SportsDisplay2 from "./SportsDisplayOption2";
 import axios from "axios";

@@ -2,7 +2,7 @@ import React from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "bootstrap/dist/js/bootstrap.bundle.min"; // Import Bootstrap JS
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import WhyRush from "./components/WhyRush/WhyRush";
 import Executives from "./components/Executives/Executives";
@@ -11,9 +11,7 @@ import Sports from "./components/Sports/Sports";
 import Rush from "./components/Rush/Rush";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Athletes from "./components/Athletes/Athletes";
-import Footer from "./components/Footer/Footer";
 import "./App.css";
-import AlumniBoard from "./components/AlumniBoard/AlumniBoard";
 
 function App() {
   return (
@@ -27,7 +25,6 @@ function App() {
         <Route path="/sports" element={<Sports />} />
         <Route path="/rush" element={<Rush />} />
         <Route path="/athletes" element={<Athletes />} />
-        {/* <Route path="/alumni-board" element={<AlumniBoard />} /> */}
       </Routes>
       <footer class="footer">
         <p>&copy; 2024 Beta Theta Pi, UBC. All rights reserved.</p>
