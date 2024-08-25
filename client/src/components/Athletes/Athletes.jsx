@@ -13,7 +13,6 @@ const apiUrl = process.env.REACT_APP_API_URL;
 
 function Athletes() {
   const [athletes, setInformation] = useState([]);
-
   useEffect(() => {
     const fetchData = async () => {
       try {
