@@ -25,10 +25,11 @@ function App() {
         <Route path="/sports" element={<Sports />} />
         <Route path="/rush" element={<Rush />} />
         <Route path="/athletes" element={<Athletes />} />
+        {/* <Route path="/alumni-board" element={<AlumniBoard />} /> */}
       </Routes>
-      <footer class="footer">
+      <footer className="footer">
         <p>&copy; 2024 Beta Theta Pi, UBC. All rights reserved.</p>
-        <p class="signature">
+        <p className="signature">
           Designed and developed by{" "}
           <a
             href="https://github.com/afifmv"

@@ -15,16 +15,24 @@ function Athletes() {
   const [athletes, setInformation] = useState([]);
 
   useEffect(() => {
+    let isMounted = true;
     const fetchData = async () => {
       try {
         const response = await axios.get(`${apiUrl}/api/athletes`);
-        setInformation(response.data);
+        if (isMounted) {
+          // Only update state if component is mounted
+          setInformation(response.data);
+        }
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
 
     fetchData();
+
+    return () => {
+      isMounted = false; // Cleanup on unmount
+    };
   }, []);
 
   return (

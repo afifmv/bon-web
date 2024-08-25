@@ -8,16 +8,23 @@ function Index() {
   const [information, setInformation] = useState([]);
 
   useEffect(() => {
+    let isMounted = true;
     const fetchData = async () => {
       try {
         const response = await axios.get(`${apiUrl}/api/information`);
-        setInformation(response.data);
+        if (isMounted) {
+          setInformation(response.data);
+        }
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
 
     fetchData();
+
+    return () => {
+      isMounted = false; // Cleanup on unmount
+    };
   }, []);
 
   const presidentSpeech = information.find(
