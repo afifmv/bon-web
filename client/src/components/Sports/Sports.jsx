@@ -28,8 +28,8 @@ function Sports() {
 
   return (
     <div className="sports-banner">
-      <div className="img-banner"></div>
       <ButtonContainer />
+      <div className="img-banner"></div>
       <h1>The Athletic Fraternity</h1>
       <hr />
       <div>

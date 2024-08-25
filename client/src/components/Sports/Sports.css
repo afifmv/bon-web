@@ -10,6 +10,7 @@
 @media (max-width: 850px) {
   .sports-banner .img-banner {
     background: url(https://images.squarespace-cdn.com/content/v1/5d55b38719eb49000118ace1/1649884438066-Z3GN9G4TDT3MCQ2PF0N2/image-asset.jpeg);
+    background-size: cover;
   }
 
   .sports-display {
@@ -18,8 +19,8 @@
   }
 
   .sports-display img {
-    height: 300px;
-    width: 350px;
+    height: auto;
+    width: 60%;
     margin: 50px auto;
     display: flex;
     align-items: center;
@@ -44,6 +45,12 @@
     width: 60%;
     margin: 0.5rem auto;
   }
+  .sports-banner .img-banner {
+    width: 100%;
+    height: 50vh;
+    background: url(https://i.postimg.cc/Y9ps3B80/Screenshot-2024-08-26-at-1-39-14-AM.png);
+    background-size: cover;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -51,6 +58,7 @@
     width: 100vw;
     height: 100vh;
     background: url(https://images.squarespace-cdn.com/content/v1/5d55b38719eb49000118ace1/1649884438066-Z3GN9G4TDT3MCQ2PF0N2/image-asset.jpeg);
+    background-size: cover;
   }
 
   .sports-display {
@@ -61,7 +69,8 @@
   }
 
   .sports-display img {
-    height: 40vh;
+    height: auto;
+    width: 100%;
   }
 
   .sports-banner h1 {

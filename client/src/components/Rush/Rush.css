@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap");
 
 @media (max-width: 850px) {
+  .rush-img {
+    width: 100%;
+    height: 60vh;
+    background: url(https://i.postimg.cc/JzsHdpPQ/14425528-1297512566948074-2223726588076701240-o.jpg);
+    background-size: cover;
+  }
 }
 
 @media (min-width: 1024px) {
   .rush-img {
     width: 100vw;
     height: 100vh;
-    background: url(https://i.ytimg.com/vi/aen3zyvyevc/maxresdefault.jpg);
+    background: url(https://i.postimg.cc/JzsHdpPQ/14425528-1297512566948074-2223726588076701240-o.jpg);
     background-size: cover;
   }
 

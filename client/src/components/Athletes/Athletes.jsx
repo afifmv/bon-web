@@ -28,8 +28,9 @@ function Athletes() {
 
   return (
     <div className="sports-banner">
-      <div className="athletes-banner"></div>
       <ButtonContainer />
+      <div className="athletes-banner"></div>
+
       <h1>Notable Athletes Of Gamma Omicron</h1>
       <hr />
       <div>

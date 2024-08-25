@@ -14,12 +14,12 @@ const text2 =
 function WhyRush() {
   return (
     <div className="why-rush-banner">
+      <ButtonContainer />
       <div className="banner-img">
         <img
           src="https://www.beta.org/wp-content/uploads/2022/05/Housing-Hero-Image.jpg"
           alt=""
         />
-        <ButtonContainer />
       </div>
       <hr />
       <div className="why-rush-info">

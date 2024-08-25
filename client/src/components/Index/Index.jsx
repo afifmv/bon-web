@@ -1,36 +1,39 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Index.css";
-import axios from "axios";
-
-const apiUrl = process.env.REACT_APP_API_URL;
 
 function Index() {
-  const [information, setInformation] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(`${apiUrl}/api/information`);
-        setInformation(response.data);
-      } catch (error) {
-        console.error("Error fetching data:");
-      }
-    };
-    fetchData();
-  }, []);
-
-  const presidentSpeech = information.find(
-    (info) => info.name === "President's Welcome Speech"
-  );
-
   return (
     <div className="index-banner">
-      <img src="https://i.postimg.cc/htbybssf/brendanC.png" alt="Brendan" />
-      <div className="president-details gfs-didot-regular">
-        <h2>Brendan Cooper - President</h2>
-        <pre className="gfs-didot-regular">
-          {presidentSpeech ? presidentSpeech.information : "Loading..."}
-        </pre>
+      <div className="button-div gfs-didot-regular">
+        <a href="https://ubcifc.com/">UBC Fraternities</a>
+        <a href="https://www.beta.org/">BETA International</a>
+      </div>
+      <img
+        src="https://i.postimg.cc/hjqF4BtP/temp-Image-DXxz6y.avif"
+        alt="Rush"
+      />
+
+      <div className="photo-div">
+        <img
+          src="https://i.postimg.cc/nVj4KTN4/31113803-10157301756346124-6862086652026683392-o.jpg"
+          alt=""
+          srcset=""
+        />
+        <img
+          src="https://i.postimg.cc/yY3Ld7Vz/455969402-975925380888277-1952970490411345517-n.jpg"
+          alt=""
+          srcset=""
+        />
+        <img
+          src="https://i.postimg.cc/65dtZJ0D/21558976-1706293446069982-2771339755398843141-n.jpg"
+          alt=""
+          srcset=""
+        />
+        <img
+          src="https://i.postimg.cc/mgmDcWZT/our-mission.jpg"
+          alt=""
+          srcset=""
+        />
       </div>
     </div>
   );

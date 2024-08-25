@@ -4,22 +4,22 @@ function PhotoGrid() {
   return (
     <div className="photo-grid">
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ULMAQusbvQG6Yx9vVTIqgCzHSVYSOq_3Kg&s"
+        src="https://www.beta.org/wp-content/uploads/2023/02/UBC-Drop-the-Puck-header.jpg"
         alt=""
         srcset=""
       />
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFGBYJr9O-26X4yY6JMWoYI0FDryHsoKG5WQ&s"
+        src="https://i.postimg.cc/jqw9FpDC/Screenshot-2024-08-26-at-12-55-46-AM.png"
         alt=""
         srcset=""
       />
       <img
-        src="https://www.beta.org/wp-content/uploads/2023/02/UBC-Drop-the-Puck-5-scaled.jpg"
+        src="https://i.postimg.cc/3N8kdX4c/Screenshot-2024-08-26-at-12-56-10-AM.png"
         alt=""
         srcset=""
       />
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZRwtg5TOt7Nhhu3IhiO2dBRL02kvgkNZzw&s"
+        src="https://i.postimg.cc/rpb6dMdX/Screenshot-2024-08-26-at-12-58-56-AM.png"
         alt=""
         srcset=""
       />

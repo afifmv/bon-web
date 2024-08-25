@@ -15,8 +15,7 @@
   }
 
   .photo-grid img {
-    height: 300px;
-    width: 300px;
+    width: 100%;
     display: block;
     margin: 1vh auto;
   }
@@ -26,6 +25,13 @@
     text-align: center;
     width: 80%;
     margin: auto;
+  }
+
+  .dtp-banner {
+    background: url(https://i.postimg.cc/SNdw6yBY/Screenshot-2024-08-26-at-12-52-06-AM.png);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
   }
 }
 
@@ -42,13 +48,13 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
 
   .photo-grid img {
-    height: 350px;
-    width: 400px;
+    width: 100%;
+    height: auto;
     margin: 1rem auto;
   }
 }

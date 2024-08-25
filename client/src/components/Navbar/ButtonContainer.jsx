@@ -34,14 +34,14 @@ function ButtonContainer() {
           alt=""
         />
         <div className="dropdown-div">
-          <a href="/whyrush">Alumni</a>
+          <a href="/#">Social Media</a>
           <ul>
             <li>
-              <a href="/testimonials">Testimonials</a>
+              <a href="https://www.instagram.com/betaubc/?hl=en">Instagram</a>
             </li>
             <hr />
             <li>
-              <a href="https://www.beta.org/">BETA HQ</a>
+              <a href="https://www.facebook.com/betathetapi">Facebook</a>
             </li>
             <hr />
           </ul>
@@ -49,20 +49,9 @@ function ButtonContainer() {
         <a href="/dtp" className="click-button">
           Philanthrophy
         </a>
-        <div className="dropdown-div">
-          <a href="/#">Recruitment</a>
-          <ul>
-            <li>
-              <a href="/rush">Rush</a>
-            </li>
-            <hr />
-            <li>
-              <a href="https://www.instagram.com/betaubc/?hl=en">Instagram</a>
-            </li>
-            <hr />
-            <hr />
-          </ul>
-        </div>
+        <a href="/rush" className="click-button">
+          Recruitment
+        </a>
       </div>
       {/* TOp Nav Menu */}
       <div className="topnav d-lg-none fixed-top">
@@ -78,11 +67,11 @@ function ButtonContainer() {
           <a href="/">Home</a>
           <a href="/executives">Executives</a>
           <a href="/whyrush">Values</a>
-          <a href="/testimonials">Testimonials</a>
           <a href="/rush">Rush</a>
           <a href="/dtp">Philanthrophy</a>
           <a href="/sports">Sports</a>
           <a href="/athletes">Athletes</a>
+          <a href="https://www.instagram.com/betaubc/?hl=en">Instagram</a>
         </div>
         {/* <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links --> */}
         <a href="#/" className="icon" onClick={onClick}>
