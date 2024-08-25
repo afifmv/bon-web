@@ -15,7 +15,6 @@ function Athletes() {
   const [athletes, setInformation] = useState([]);
 
   useEffect(() => {
-    let isMounted = true;
     const fetchData = async () => {
       try {
         const response = await axios.get(`${apiUrl}/api/athletes`);

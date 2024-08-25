@@ -28,6 +28,7 @@ function Rush() {
     const fetchData = async () => {
       try {
         const response = await axios.get(`${apiUrl}/api/executive`);
+        setItems(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }

@@ -16,6 +16,7 @@ function Index() {
         console.error("Error fetching data:");
       }
     };
+    fetchData();
   }, []);
 
   const presidentSpeech = information.find(
