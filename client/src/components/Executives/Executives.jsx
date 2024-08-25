@@ -10,24 +10,16 @@ function Executives() {
   const [executives, setItems] = useState([]);
 
   useEffect(() => {
-    let isMounted = true;
     const fetchData = async () => {
       try {
         const response = await axios.get(`${apiUrl}/api/executive`);
-        if (isMounted) {
-          // Only update state if component is mounted
-          setItems(response.data);
-        }
+        setItems(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
 
     fetchData();
-
-    return () => {
-      isMounted = false; // Cleanup on unmount
-    };
   }, []);
 
   return (

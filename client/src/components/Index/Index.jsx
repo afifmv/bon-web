@@ -8,22 +8,13 @@ function Index() {
   const [information, setInformation] = useState([]);
 
   useEffect(() => {
-    let isMounted = true;
     const fetchData = async () => {
       try {
         const response = await axios.get(`${apiUrl}/api/information`);
-        if (isMounted) {
-          setInformation(response.data);
-        }
+        setInformation(response.data);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error("Error fetching data:");
       }
-    };
-
-    fetchData();
-
-    return () => {
-      isMounted = false; // Cleanup on unmount
     };
   }, []);
 
